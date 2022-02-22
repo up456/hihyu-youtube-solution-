@@ -1,8 +1,10 @@
-header {
+.header {
   background-color: #000;
   height: 4em;
   display: flex;
+  align-items: center;
   margin-bottom: -0.7em;
+  padding: 2.5em 1em;
 }
 
 .logoGroup{
@@ -14,13 +16,13 @@ header {
 }
 
 .youtubeIcon {
-  color: red;
-  font-size: 1.3em;
 }
 .logoTitle{
   margin-left: .2em;
+  font-size: 2.2rem;
   font-weight: 500;
   color: #fff;
+  padding-bottom: 0.2em;
 }
 
 .searchForm {
@@ -28,17 +30,18 @@ header {
   align-items: center;
   width: 80%;
   margin-left: 0.8em;
-
 }
 .searchInput {
-  width: 100%;
+  flex-basis: 100%;
   padding: 0.5rem;
   outline: none;
   font-size: 1.1rem;
 }
 .searchBtn {
-  font-size: 1.3em;
-  padding: 0.33rem 0.7rem;
   background-color: #444;
-  color: #fff;
+  padding: .5em 1em;
+  outline: 0;
+}
+.searchImg {
+  width: 1.7em;
 }
