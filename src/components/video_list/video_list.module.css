@@ -4,3 +4,9 @@
   list-style: none;
   padding-left: 0;
 }
+
+@media (max-width: 780px) {
+  .videos {
+    flex-direction: column;
+  }
+}

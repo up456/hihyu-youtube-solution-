@@ -20,6 +20,10 @@ function App() {
       .catch((error) => console.log('error', error));
   }, []);
 
-  return <VideoList videos={videos} />;
+  return (
+    <div className={styles.bodyContainer}>
+      <VideoList videos={videos} />;
+    </div>
+  );
 }
 export default App;
