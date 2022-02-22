@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import styles from './app.module.css';
+import Header from './components/header/header';
 import VideoList from './components/video_list/video_list';
 
 function App() {
@@ -22,6 +23,7 @@ function App() {
 
   return (
     <div className={styles.bodyContainer}>
+      <Header />
       <VideoList videos={videos} />;
     </div>
   );
