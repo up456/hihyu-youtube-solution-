@@ -1,13 +1,17 @@
 import React, { useRef, useState } from 'react';
 import styles from './search_header.module.css';
 
-const SearchHeader = () => {
+const SearchHeader = ({
+  onSubmit,
+}: {
+  onSubmit: (keyword: string) => void;
+}) => {
   const inputRef = useRef(null);
   const [value, setValue] = useState('');
 
   const handleOnSubmit = (event: any) => {
     event.preventDefault();
-    console.log(value);
+    onSubmit(value);
   };
 
   const handleOnChange = (event: any) => {
